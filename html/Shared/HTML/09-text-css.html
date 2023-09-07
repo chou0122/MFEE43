@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字樣式(行高 + 水平對齊 + 垂直對齊)</title>
+    <style>
+      p {
+        line-height: 1.8em;
+      }
+      .left {
+        text-align: left;
+      }
+      .center {
+        text-align: center;
+      }
+      .right {
+        text-align: right;
+      }
+      .justify {
+        text-align: justify;
+        /* text-align-last: justify; */
+      }
+      /* 單行文字垂直水平置中 */
+      .box {
+        background-color: pink;
+        height: 100px;
+        line-height: 100px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>文字行高</h2>
+    <p>
+      <!-- emmet => lorem*5 -->
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore, iste
+      illum, tenetur odio quidem quo suscipit nisi libero asperiores quibusdam,
+      sed totam. Accusantium, veritatis suscipit quo itaque rerum obcaecati
+      molestias. Dicta, tenetur! Ullam aspernatur maxime, qui tempore ducimus
+      provident laboriosam, sed magni excepturi, vel veritatis dolor beatae
+      pariatur a accusantium molestiae! Eligendi enim placeat quia dolore,
+      facilis dolores mollitia rem. Obcaecati ipsa est provident totam nobis,
+      corporis accusantium? Cupiditate quaerat iste illo ad voluptatum aliquam!
+      Repudiandae iste totam nihil molestias, sit enim excepturi sapiente
+      doloribus architecto, repellendus fuga ea quas? Placeat, nihil! Neque
+      laboriosam vero inventore ex. Eos inventore adipisci quidem fugiat labore
+      et fuga quaerat, voluptas aliquam, error libero dolor quo nemo aspernatur
+      maxime hic. Odit possimus omnis sed. Fugiat at aliquam, corporis quam
+      molestiae eius incidunt ab laborum vel explicabo, soluta iusto provident
+      quisquam unde quidem quod atque eligendi odit minima nobis rem, nam
+      excepturi quo labore? Ex.
+    </p>
+    <hr />
+    <h2>水平對齊</h2>
+    <h3>文字靠左對齊(預設) left</h3>
+    <p class="left">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nulla
+      minus fuga corporis! Quae, voluptatem provident? Totam quos voluptatum
+      necessitatibus alias cupiditate officia, blanditiis aliquid sed, rerum,
+      quisquam adipisci nostrum? Quae et minima molestias sint voluptatum
+      commodi a corporis, fugit nam ullam mollitia pariatur aliquid! Alias magni
+      rem nisi natus accusantium quam eum, est, nam quibusdam culpa esse aliquam
+      molestias. Nostrum inventore dolorem molestias cum praesentium sint
+      quibusdam animi eos unde, repudiandae aperiam quos tempora laudantium,
+      illo, rem sapiente. Alias minus enim deserunt officiis quasi explicabo
+      tempore quis doloribus quia! Earum consequatur distinctio at quae aliquid
+      praesentium velit quibusdam veritatis, voluptatum eveniet voluptate quis
+      odio ullam corrupti ex maxime dolore. Consequuntur sint eaque repellat?
+      Assumenda vero recusandae suscipit tempore odio. Nisi cum iure esse maxime
+      voluptates doloribus harum quas ducimus aliquam dolores placeat ab
+      cupiditate porro voluptate commodi, quasi fugiat nihil debitis? Amet ipsum
+      ad ducimus saepe non dicta nihil!
+    </p>
+    <hr />
+    <h3>文字靠右對齊 right</h3>
+    <p class="right">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem
+      nesciunt voluptatem, error amet, earum labore obcaecati deserunt adipisci
+      optio laboriosam? Non quod laudantium praesentium aliquid animi harum
+      distinctio sit? Cum optio ratione corrupti, amet expedita dolorum tenetur
+      facilis officia aliquid, ea maxime voluptas quam hic nulla corporis rem
+      cupiditate modi assumenda officiis soluta neque, vitae quaerat natus! Quo,
+      reprehenderit! Obcaecati dicta optio corrupti illum repudiandae vel sunt
+      temporibus maiores molestias quidem a cupiditate accusantium aliquid
+      culpa, quasi nihil necessitatibus, iure voluptatem dolore eius aspernatur?
+      Veritatis molestiae explicabo iste ratione. Adipisci deserunt voluptatibus
+      amet a voluptas saepe doloribus ratione eligendi eius, est incidunt
+      officiis vero debitis! Odio magni molestiae rem suscipit, consectetur
+      vero? Doloribus iure animi quam quidem dicta alias! Sapiente excepturi
+      asperiores quisquam suscipit consectetur dolore? Eaque voluptatem eius
+      blanditiis expedita, quod earum consequuntur dignissimos quasi iste, neque
+      unde eveniet eligendi sint aut repellendus laudantium, natus ea cupiditate
+      ex.
+    </p>
+    <hr />
+    <h3>文字置中對齊 center</h3>
+    <p class="center">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit autem
+      nesciunt voluptatem, error amet, earum labore obcaecati deserunt adipisci
+      optio laboriosam? Non quod laudantium praesentium aliquid animi harum
+      distinctio sit? Cum optio ratione corrupti, amet expedita dolorum tenetur
+      facilis officia aliquid, ea maxime voluptas quam hic nulla corporis rem
+      cupiditate modi assumenda officiis soluta neque, vitae quaerat natus! Quo,
+      reprehenderit! Obcaecati dicta optio corrupti illum repudiandae vel sunt
+      temporibus maiores molestias quidem a cupiditate accusantium aliquid
+      culpa, quasi nihil necessitatibus, iure voluptatem dolore eius aspernatur?
+      Veritatis molestiae explicabo iste ratione. Adipisci deserunt voluptatibus
+      amet a voluptas saepe doloribus ratione eligendi eius, est incidunt
+      officiis vero debitis! Odio magni molestiae rem suscipit, consectetur
+      vero? Doloribus iure animi quam quidem dicta alias! Sapiente excepturi
+      asperiores quisquam suscipit consectetur dolore? Eaque voluptatem eius
+      blanditiis expedita, quod earum consequuntur dignissimos quasi iste, neque
+      unde eveniet eligendi sint aut repellendus laudantium, natus ea cupiditate
+      ex.
+    </p>
+    <hr />
+    <h3>文字左右對齊 justify</h3>
+    <p class="justify">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt,
+      praesentium in eum hic, deleniti dignissimos a quidem odit harum dolor
+      repellat autem officia unde cum fugiat sit sint ipsa ex. Voluptate
+      officiis harum nulla earum eaque consequatur necessitatibus, modi
+      molestiae aliquam nesciunt dolor perferendis sequi expedita veniam itaque
+      accusantium. Sed eveniet quam deleniti accusamus voluptatum, architecto
+      consectetur repellendus voluptates dolores! Obcaecati, eum voluptates unde
+      iste distinctio sint qui iusto voluptatem labore tempore voluptate minus!
+      Iure, rerum. Quia, nulla ipsum. A, molestiae dolor! Officia, libero! Fugit
+      iste adipisci ut blanditiis similique! Quis, optio. Non maiores sapiente
+      qui perspiciatis ea expedita autem ducimus porro debitis pariatur. Sunt ex
+      ut iure sapiente est error. Inventore, quia voluptates error tempore
+      distinctio praesentium quaerat iste! Architecto placeat nostrum veniam
+      enim asperiores esse consectetur laudantium nulla autem, recusandae
+      dolores facere repudiandae, hic sit animi quaerat. Illo nisi ut a quidem,
+      facilis eius velit vero non sequi!
+    </p>
+    <hr />
+    <h2>行內元素水平置中對齊</h2>
+    <div class="center" style="background-color: pink">
+      <img src="./images/Bulbasaur.jpg" alt="" width="200" />
+      <span>span</span>
+    </div>
+    <hr />
+    <h2>垂直對齊</h2>
+    <div class="box">單行文字垂直置中</div>
+  </body>
+</html>

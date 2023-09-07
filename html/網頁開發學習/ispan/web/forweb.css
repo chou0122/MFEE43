@@ -1,0 +1,22 @@
+h1, h2, #title{
+  color: aqua; 
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 標楷體, 新細明體;
+}
+
+.a {
+    text-decoration: none;
+    background-color: darkcyan;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 16px;
+}
+.a:hover{
+    text-decoration: dotted;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>方塊模型</title>
+    <style>
+      img,div,span {
+        height: 200px;
+        border: 2px solid black;
+        /* padding: 20px 40px 60px 100px; */
+        background-color: pink;
+        /* margin: 20px; */
+        padding-bottom: 40px;
+        margin-left: 40px;
+      }
+      .borderbox{
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+      }
+      div{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>img元素同時是行內元素也是區塊元素</h2>
+    <img src="./images/Bulbasaur.jpg" alt="" />
+    <img src="./images/Bulbasaur.jpg" alt="" class="borderbox"/>
+    <img src="./images/Bulbasaur.jpg" alt="" />
+    <img src="./images/Bulbasaur.jpg" alt="" />
+
+    <h2>區塊元素</h2>
+    <div>區塊元素</div>
+    <div>區塊元素</div>
+    <div>區塊元素</div>
+
+    <h2>行內元素</h2>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+    <span>span</span>
+  </body>
+</html>

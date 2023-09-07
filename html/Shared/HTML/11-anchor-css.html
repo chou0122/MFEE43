@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>超連結</title>
+    <style>
+      .anchor1:link{
+        text-decoration: none;
+      }
+      .anchor1:visited{
+        color: red;
+      }
+      .anchor1:hover{
+        color: green;
+        text-decoration: underline solid green;
+      }
+      .anchor1:active{
+        color: purple;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>外部連結</h2>
+    <a href="https://www.google.com" target="_blank" class="anchor1">Google</a>
+    <h2>網站內的網頁超連結</h2>
+    <a href="./04-list.html">清單元素</a>
+    <h2>網頁內的超連結 (錨點)</h2>
+    <a href="#target">指定到特定元素</a>
+    <!-- 使用一個區塊容器設定高度，才可以展現錨點效果 -->
+    <!-- <p style="height: 100vh;"></p> -->
+    <p id="target">指定位置</p>
+    <!-- 使用一個區塊容器設定高度，才可以展現錨點效果 -->
+    <!-- <p style="height: 100vh;"></p> -->
+    <h2>電子郵件</h2>
+    <a href="mailto:eddiewang@ispan.com.tw">寄送郵件</a>
+    <h2>檔案下載</h2>
+    <a href="./網頁設計入門_230818.jpg">檢視檔案</a>
+    <a href="./網頁設計入門_230818.pdf" download>下載檔案</a>
+
+  </body>
+</html>

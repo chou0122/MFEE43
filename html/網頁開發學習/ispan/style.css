@@ -1,0 +1,20 @@
+body {
+  background-color: rgb(255,255,255);
+    font-family: 標楷體 ,新細明體;
+  } 
+  h1{
+    color: black;
+  }
+
+.oao {
+  font-size: 2em;
+}
+/* p::before {
+  content: ">>";
+  background-color: black;
+  color: yellow;
+}
+
+p {
+  background-color: blueviolet;
+} */

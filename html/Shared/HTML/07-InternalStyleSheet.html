@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Google Fonts 外部連結 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&display=swap"
+    rel="stylesheet"
+    />
+    <style>
+        @font-face {
+        font-family: "Cursive_Script";
+        src: url(./fonts/Cursive_Script.ttf);
+      }
+      /* CSS樣式 (第2種寫法) */
+      /* CSS選擇器 {
+            CSS屬性: CSS屬性值;
+            CSS屬性: CSS屬性值;
+            CSS屬性: CSS屬性值;
+            CSS屬性: CSS屬性值;
+        } */
+
+      /* 標籤選擇器：只要有使用 以下元素，就會套用到CSS效果 */
+
+      /* 只要有使用 <h1> 或是 <h2> 元素 就會套用到以下CSS樣式 */
+      h1,
+      h2 {
+        font-size: 60px;
+        color: blue;
+      }
+
+      /* 只要有使用 <p>元素 就會套用到以下CSS樣式 */
+      /* p {
+        color: orange;
+        font-size: 40px;
+      } */
+
+      /* 如果多個選擇器的CSS樣式設定相同，可以透過 , 方式區隔選擇器，簡化程式碼 */
+      /* h2{
+        font-size: 60px;
+        color: blue;
+      } */
+
+      /* 類別選擇器 (class) */
+      .fruit1 {
+        color: red;
+      }
+      /* 標籤+類別選擇器合併使用方式 */
+      h1.fruit2 {
+        color: rgb(161, 161, 0);
+      }
+      h1 .fruit2 {
+        color: purple;
+      }
+      h1 > .fruit2 {
+        color: blue;
+      }
+
+      .orange {
+        color: orange;
+      }
+      .fz40 {
+        font-size: 40px;
+      }
+      .fw900 {
+        font-weight: 900;
+      }
+      .fw900orange {
+        color: red;
+      }
+      .ff1 {
+        font-family: "標楷體", "新細明體", "細明體";
+      }
+      .CursiveScript {
+        font-family: "Cursive_Script";
+      }
+      .roboto {
+        /* 英文字放前面,再放中文字 */
+        font-family: "Roboto Condensed", 'Noto Sans TC';
+        font-weight: 100;
+      }
+    </style>
+    <title>
+        內部樣式表 + 標籤/類別選擇器 + 文字字型(font-face/google font)
+      </title>
+  </head>
+  <body>
+    <!-- <h1 style="color: red; font-size: 30px;">apple</h1> -->
+    <h1 class="fruit1 ff1">apple中文</h1>
+    <p class="fw900 orange fz40">orange中文</p>
+    <p>mango</p>
+    <!-- <h2 style="color: red;">banana</h2> -->
+    <h2 class="fruit2 CursiveScript">banana中文</h2>
+    <h1 class="fruit2 roboto">banana中文</h1>
+    <h1 class="fruit2">banana中文 <span class="fruit2">purple</span></h1>
+    <h1 class="fruit2">
+      banana
+      <span class="fruit2">
+        第一層span<span class="fruit2">第二層span</span></span
+      >
+    </h1>
+    <p class="fruit2">banana</p>
+  </body>
+</html>

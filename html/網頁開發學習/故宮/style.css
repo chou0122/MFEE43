@@ -1,0 +1,15 @@
+/* P::before{
+    content: ">>>";
+    color: blue;
+}
+input[type="text"]{
+    color: blue;
+}
+input[type="text"]:active{
+    color: black;
+}   */
+ body{    
+    background-size:cover;
+    /* background-repeat: no-repeat;  */
+    background-image:url("../圖片/ispan.png");
+    }; 

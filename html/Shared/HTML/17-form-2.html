@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>表單元素 Form</title>
+  </head>
+  <body>
+    <form action="#">
+      <label class="t1"
+        >手機驗證
+        <input
+          type="tel"
+          pattern="^[0][9]\d{8}$"
+          maxlength="10"
+          name="tel"
+          required
+      /></label>
+      <h2>日期控制項</h2>
+      <label
+        >date：
+        <input
+          type="date"
+          name="date"
+          max="2023-09-29"
+          min="2023-08-29"
+          value="2023-09-15"
+      /></label>
+      <br />
+      <label
+        >datetime-local：
+        <input
+          type="datetime-local"
+          name="datetime-local"
+          value="2000-01-01T09:00"
+      /></label>
+      <br />
+      <label>time： <input type="time" name="time" /></label>
+      <br />
+      <label>month： <input type="month" name="month" /></label>
+      <br />
+      <label>week： <input type="week" name="week" /></label>
+      <hr />
+      <h2>文字相關控制項</h2>
+      <label>email： <input type="email" /></label>
+      <br />
+      <label>url： <input type="url" /></label>
+      <br />
+      <label>tel： <input type="tel" autofocus /></label>
+      <br />
+      <label>search： <input type="search" /></label>
+      <hr />
+      <h2>其他控制項</h2>
+      <label for="">color：</label>
+      <input type="color" name="color" value="#fa8072" />
+      <br />
+      <label for="">range：</label>
+      <input type="range" name="range" max="50" min="0" step="10" value="50" />
+      <br />
+      <label for="">number：</label>
+      <input type="number" name="number" max="50" min="0" step="1" value="50" />
+      <br />
+      <input type="submit" value="送出" />
+    </form>
+  </body>
+</html>

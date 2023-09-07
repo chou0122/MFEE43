@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清單範例 - emmet</title>
+</head>
+<body>
+    
+    <h2> 方式一：先建立&lt;ol&gt;元素，再使用 emmet語法建立3個&lt;li&gt;元素 </h2>
+        <ol>
+            <h2> li{$}*3 </h2>
+          </ol>
+      
+          <h2> 方式二：使用 emmet語法建立1個&lt;ol&gt;元素，子層有3個&lt;li&gt;元素 </h2>
+          <h2> ol>li{$}*3 </h2>
+          <ol>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ol>
+      
+          <h2> 方式三：使用 emmet語法建立1個&lt;ol&gt;元素，子層有3個&lt;li&gt;元素，每個&lt;li&gt;元素中再包含&lt;a&gt;元素 </h2>
+          <h2> ol>(li>a{超連結$})*3 </h2>
+          <ol>
+            <li><a href="">超連結1</a></li>
+            <li><a href="">超連結2</a></li>
+            <li><a href="">超連結3</a></li>
+          </ol>
+      
+          <h2> 方式四：使用 emmet語法建立1個&lt;ol&gt;元素，子層有1個&lt;li&gt;元素，孫層有3個&lt;a&gt;元素 </h2>
+          <h2> ol>li>a{超連結$}*3 </h2>
+          <ol>
+            <li>
+              <a href="">超連結1</a>
+              <a href="">超連結2</a>
+              <a href="">超連結3</a>
+            </li>
+          </ol>
+</body>
+</html>

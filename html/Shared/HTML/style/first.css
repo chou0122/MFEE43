@@ -1,0 +1,19 @@
+/* 單純 CSS選擇器{ CSS屬性:屬性值;} */
+
+/* 範圍越不精準(指向更多元素時)=>權重越低，選擇非常精準=>權重越高 */
+#font2 {
+    color: purple;
+}
+h1 {
+    color: red;
+}
+/* 當權重相同時，比優先順序，在後面的會被套用。 */
+.font2{
+    color: gray;
+}
+.font1 {
+    color: blue;
+}
+* {
+    color: yellow;
+}

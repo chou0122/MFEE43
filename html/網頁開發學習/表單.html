@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>故宮聯絡表單</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <form action="" method="get">
+        <label for="number">手機號碼:</label>
+        <input id="number" type="number" name="number" required>
+        <p>
+        <label for="email">email:</label>
+        <input id="email"type="text" name ="email" required>   
+        </p>
+        <p>
+        <label for="password">密碼:</label>
+        <input id="password"type="password" name ="password" minlength="3" maxlength="7" required>   
+        </p>
+        <P>
+            <label for="年齡">年齡:</label>
+            <input id="年齡" type="number" name="age" min=0 max="125" value="99" required>
+        <!-- </P>
+        <label for="gender">性別:</label>
+        <select name="gender" id="gender" required><option value=""></option><option value="Cthulhu">克蘇魯</option><option value="male">男性</option><option value="female">女性</option></select> -->
+
+        <p>
+            <label for="gender">性別:</label>
+            <input id =male type="radio"name="gender" value="male" required>
+            <label for="male">男性</label>
+            <input id =female type="radio"name="gender" value="female">
+            <label for="female">女性</label>
+            <input id =Cthulhu type="radio"name="gender" value="Cthulhu" checked>
+            <label for="Cthulhu">克蘇魯</label>
+        </p>
+        <P>
+            <label for="體重">體重:</label>
+            <input id="體重" type="number" name="weight" min=0 max="125" value="20" step="0.1" placeholder="請輸入真實體重" required>
+            
+        </P>
+        <p>
+        <input id="checkbox"type="checkbox" checked name="checkbox" value="agree">
+        <label for="checkbox">我同意資料外洩</label>
+        <label for="area">居住地區:</label>
+        <input list="arealist" type="text"name="area"id="area" required>
+        <datalist id="arealist">
+            <option value="台北市">台北市</option>
+            <option value="新北市">新北市</option>
+            <option value="基隆市">基隆市</option>
+            <option value="桃園市">桃園市</option>
+            <option value="苗栗縣">苗栗縣</option>
+            <option value="嘉義縣">嘉義縣</option>
+            <option value="台中市">台中市</option>
+            <option value="台南市">台南市</option>
+            <option value="高雄市">高雄市</option>
+            <option value="宜蘭縣">宜蘭縣</option>
+            <option value="新竹縣">新竹縣</option>
+            <option value="南投縣">南投縣</option>
+            <option value="屏東縣">屏東縣</option>
+            <option value="花蓮縣">花蓮縣</option>
+            <option value="雲林縣">雲林縣</option>
+            <option value="台東縣">台東縣</option>
+            <option value="彰化縣">彰化縣</option>
+            <option value="澎湖縣">澎湖縣</option>
+        </datalist>    
+        <label for="suggestion">意見反應:</label>
+        <textarea name="suggestion" id="suggestion" cols="17" rows="5" placeholder="請填寫給網站的高見!"></textarea>
+        <input type="file">
+        </p>
+        <button type="submit">確認</button>    
+</body>
+</html>

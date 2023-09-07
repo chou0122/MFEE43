@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>清單元素(項目清單/序號清單/定義清單)</title>
+  </head>
+  <body>
+    <h2>項目清單(無順序)</h2>
+    <ul>
+      <li>第一項</li>
+      <li>第二項</li>
+      <li>第三項</li>
+    </ul>
+    <h2>序號清單(有順序)</h2>
+    <ol>
+      <!-- li{第$$項}*3 -->
+      <li>第01項</li>
+      <li>第02項</li>
+      <li>第03項</li>
+    </ol>
+    <h3>巢狀清單</h3>
+    <ul>
+      <li>
+        第一項
+        <ul>
+          <li>第1-1項</li>
+          <li>第1-2項</li>
+          <li>第1-3項</li>
+        </ul>
+      </li>
+      <li>
+        第二項
+        <div>第二項的補充說明</div>
+        <!-- <span>1</span><span>2</span> -->
+      </li>
+      <li>第三項</li>
+    </ul>
+    <h2>定義清單</h2>
+    <h3>櫻花鉤吻鮭</h3>
+    <dl>
+        <!-- 一個內容及一個說明 -->
+      <dt>學名</dt>
+      <dd>Oncorhynchus masou formosanus</dd>
+      <dt>俗名</dt>
+      <dd>台灣鮭魚、台灣鱒、次高鱒、台灣山女</dd>
+      <!-- 一個內容及多個說明 -->
+      <dt>俗名</dt>
+      <dd>台灣鮭魚</dd>
+      <dd>台灣鱒</dd>
+      <dd>次高鱒</dd>
+      <dd>台灣山女</dd>
+      <!-- 一個內容及一個說明搭配項目清單 -->
+      <dt>俗名</dt>
+      <dd>
+        <ul>
+          <li>台灣鮭魚</li>
+          <li>台灣鱒</li>
+          <li>次高鱒</li>
+          <li>台灣山女</li>
+        </ul>
+      </dd>
+    </dl>
+  </body>
+</html>

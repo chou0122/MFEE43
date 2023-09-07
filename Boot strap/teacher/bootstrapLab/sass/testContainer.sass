@@ -1,0 +1,41 @@
+$xsmall-media: 576px
+$small-media: 768px
+$medium-media: 992px
+$large-media: 1200px
+$xlarge-media: 1400px
+
+@mixin xs-width()
+    @media (min-width: $xsmall-media)
+        @content
+@mixin sm-width()
+    @media (min-width: $small-media)
+        @content
+@mixin md-width()
+    @media (min-width: $medium-media)
+        @content
+@mixin lg-width()
+    @media (min-width: $large-media)
+        @content
+@mixin xxl-width()
+    @media (min-width: $xlarge-media)
+        @content
+
+body
+    &::after
+        position: absolute
+        right: 0
+        top: 0
+        content: "XS"
+        font-size: 60px
+        font-weight: bold
+        color: #e92323
+        @include xs-width()
+            content: "SM"
+        @include sm-width()
+            content: "MD"
+        @include md-width()
+            content: "LG"
+        @include lg-width()
+            content: "XL"
+        @include xxl-width()
+            content: "XXL"

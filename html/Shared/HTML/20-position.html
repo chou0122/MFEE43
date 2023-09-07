@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>定位方式 position</title>
+    <style>
+      .s {
+        position: static;
+      }
+      .r {
+        position: relative;
+        background-color: pink;
+        top: 100px;
+        /* bottom: ; */
+        left: 400px;
+        /* right: ; */
+      }
+      .a {
+        position: absolute;
+        top: 400px;
+        left: 150px;
+        background-color: lightblue;
+      }
+      .r1 {
+        position: relative;
+        background-color: salmon;
+      }
+      .a1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: lightblue;
+      }
+      .f {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: darkcyan;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="s">static</div>
+    <div class="r">relative</div>
+    <div class="a">aboslute</div>
+    <div class="r1">
+      relative父層
+      <div class="a1">absolute子層</div>
+    </div>
+    <div class="f">fixed</div>
+  </body>
+</html>

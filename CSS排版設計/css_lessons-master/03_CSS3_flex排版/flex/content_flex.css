@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+/* font-family: 'Mukta', sans-serif; */
+/* 電腦與平板上應用的樣式 */
+body {
+    background-color: rgb(237, 237, 237);
+    margin: 0px;
+    font-size: 14px;
+    font-family: 'Mukta', sans-serif;
+}
+.header{
+    background: #77a1d1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}#about{    
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    width: 200px;
+}
+.container{
+    width: 100%;
+
+}
+.logo{
+    width: 100px;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    padding: 10px;
+}
+.logo>a{
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    
+    display: block;
+}
+.navbar>ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+.navbar>ul>li{
+    background-color: palegoldenrod;
+    padding: 10px;
+    text-align: center;
+}
+.navbar>ul>li>a{
+    display: block;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.menu-icon{
+    display: none;
+}
+.description{
+    height: 500px;
+    width: 500px;
+    background-color: #abc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    background-color: green;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.img{
+    width: 30%;
+}
+.text{
+    width: 30%;
+}
+section{padding: 50px 20px;}
+#skills{background-color: #aaa;}
+footer{
+    background-color: black;
+}
+footer p{
+    color: white;
+    text-align: center;
+    line-height: 100px;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 500px) {
+    .header{
+        flex-wrap: wrap;
+        align-items:stretch;
+    }
+    .menu-icon{
+        display: block;
+        background: #8b0f9f;
+        padding: 5px;
+        display: flex;
+        color: #fff;
+        font-family: 'Dosis';
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar > ul,navbar ul{
+        flex-direction: column;
+    }
+    .navbar>ul>li{
+        display: block;
+        background-color: rgb(238, 188, 96);
+        padding: 10px;
+        text-align: center;
+        border-bottom: 1px solid #333;
+        flex: 1 1 0%;
+    } 
+}
+@media screen and (max-width: 500px){
+    .menu-icon{
+        display: block;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar > ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .navbar ul li a{
+        font-size: 18px;
+        font-weight: bold;
+        width: 100%;
+        line-height: 40px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .photo, .description, .skill{
+        margin-bottom: 30px
+    }
+    
+}

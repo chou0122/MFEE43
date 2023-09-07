@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>0825練習</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .imgBox img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .imgBox {
+        float: left;
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-right: 15px;
+        width: 150px;
+        height: 80px;
+      }
+      .cardBox {
+        clear: left;
+        margin: 20px;
+        height: 80px;
+      }
+      .title {
+        margin: 10px 0 5px;
+      }
+      .company {
+        font-size: 12px;
+        color: #666;
+      }
+
+      span {
+        background-color: orange;
+        padding: 5px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>預覽圖</h2>
+    <img src="./0825_練習.JPG" alt="" />
+    <hr />
+    <h2>更多國際相關文章</h2>
+
+    <!-- 每一篇文章連結區塊 -->
+    <div class="cardBox">
+      <!-- 圖片 -->
+      <div class="imgBox">
+        <img src="./images/space.jpg" alt="" />
+        <span>1</span>
+      </div>
+      <!-- 文字 -->
+      <p class="title">
+        南極洲海冰縮減創紀錄&nbsp;&nbsp;&nbsp;&nbsp;去年恐有7000之皇帝企鵝幼雛落海喪命
+      </p>
+      <p class="company">太報</p>
+    </div>
+
+    <div class="cardBox">
+      <div class="imgBox">
+        <img src="./images/space.jpg" alt="" />
+        <span>1</span>
+      </div>
+      <p class="title">
+        南極洲海冰縮減創紀錄&nbsp;&nbsp;&nbsp;&nbsp;去年恐有7000之皇帝企鵝幼雛落海喪命
+      </p>
+      <p class="company">太報</p>
+    </div>
+
+    <div class="cardBox">
+      <div class="imgBox">
+        <img src="./images/space.jpg" alt="" />
+        <span>1</span>
+      </div>
+      <p class="title">
+        南極洲海冰縮減創紀錄&nbsp;&nbsp;&nbsp;&nbsp;去年恐有7000之皇帝企鵝幼雛落海喪命
+      </p>
+      <p class="company">太報</p>
+    </div>
+  </body>
+</html>

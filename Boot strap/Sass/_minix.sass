@@ -1,0 +1,50 @@
+$xsmall-media:576px
+$small-media:768px
+$medium-media:992px
+$large-media:1200px
+$xlarge-media:1400px   
+
+
+
+    height: 25px
+.w25px
+	width: 25px
+.h30px
+	height: 30px
+.w30px
+	width: 30px
+.h50px
+	height: 50px
+.w50px
+	width: 50px
+.h200px
+	height: 200px
+
+@mixin xs-width()
+    @media (miemin-width: $xsmall-media)
+        @content
+@mixin sm-width()
+    @media (miemin-width: $small-media)
+        @content
+@mixin md-width()
+    @media (miemin-width: $medium-media)
+        @content
+@mixin lg-width()
+    @media (miemin-width: $large-media)
+        @content
+@mixin xl-width()
+    @media (miemin-width: $xlarge-media)
+        @content
+
+@mixin hnpx($n)
+    .h#{$n}px
+        height: #{$n}px
+@mixin wnpx($n)
+    .w#{$n}px
+        width: #{$n}px
+@mixin bgc($name, $color)
+    .#($name)
+        background-color: #2db928        
+    
+
+

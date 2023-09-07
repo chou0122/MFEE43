@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文字樣式(font-style / text-transform / text-decoration)</title>
+    <style>
+      h3,
+      h2,
+      p {
+        font-size: 40px;
+      }
+      /* 文字樣式(正常/斜體) */
+      .font4 {
+        font-style: normal;
+      }
+      .font5 {
+        font-style: italic;
+      }
+      .font6 {
+        font-style: oblique;
+      }
+      /* 英文字大小寫轉換 */
+      .font7 {
+        text-transform: capitalize;
+      }
+      .font8 {
+        text-transform: uppercase;
+      }
+      .font9 {
+        text-transform: lowercase;
+      }
+      /* 文字裝飾 text-decoration-line / text-decoration-style / text-decoration-color => text-decoration */
+      .underline {
+        text-decoration-line: underline;
+      }
+      .overline {
+        text-decoration-line: overline;
+      }
+      .linethrough {
+        text-decoration-line: line-through;
+      }
+      .dotted {
+        text-decoration-style: dotted;
+      }
+      .double {
+        text-decoration-style: double;
+      }
+      .wavy {
+        text-decoration-style: wavy;
+      }
+      .red {
+        color: red;
+        text-decoration-color: red;
+      }
+      .blue {
+        color: blue;
+        text-decoration-color: blue;
+
+      }
+      .green {
+        color: green;
+        text-decoration-color: green;
+
+      }
+      /* 速記 */
+      .all {
+        /* text-decoration-line: ; */
+        /* text-decoration-style: ; */
+        /* text-decoration-color: ; */
+        text-decoration: line-through dashed purple;
+      }
+      .none {
+        text-decoration: none;
+        font-size: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>文字樣式</h3>
+    <p class="font4">正常字體</p>
+    <p class="font5">斜體</p>
+    <p class="font6">斜角體</p>
+
+    <h3>文字大小寫轉換</h3>
+    <p>applE samsunG</p>
+    <p class="font7">applE samsunG</p>
+    <p class="font8">applE samsunG</p>
+    <p class="font9">applE samsunG</p>
+
+    <h3>文字裝飾(線條)</h3>
+    <h2 class="underline dotted blue">MFEE班</h2>
+    <h2 class="overline wavy blue">MFEE班</h2>
+    <h2 class="linethrough double blue">MFEE班</h2>
+    <h2 class="all">MFEE班</h2>
+    <!-- 實作移除超連結 -->
+    <a href="123" class="none">超連結</a>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>id選擇器 + 通用選擇器</title>
+    <style>
+      /* * {
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+      } */
+      .theH1 {
+        color: red;
+      }
+      #theH1 {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 title="搜尋引擎" class="theH1" id="theH1">Google</h1>
+    <h2 class="theH1">Yahoo</h2>
+    <p>1234</p>
+    <a href="">456</a>
+    <img src="./images/Charizard.jpg" alt="" />
+    <!-- JavaScript 控制元素時使用id，要是唯一值，否則會無法正確抓取元素 -->
+    <!-- <script>
+      document.getElementById('theH1').style.color='blue';
+    </script> -->
+  </body>
+</html>

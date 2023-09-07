@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base target="_blank">
+    <style>
+        .h1 {
+            background-color: yellow;
+            visibility: hidden;
+            font-size: 2px;
+        }
+    </style>
+    <title>聯絡表單</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+    <form action="" method="get">
+        <fieldset>
+            <legend>基本資料</legend>
+            <label for="number" pattern="0-9">手機號碼:<input id="number" type="number" name="tel" required></label>
+            <p>
+            <label for="email">email:<input id="email"type="email" name ="email" required></label>   
+            </p>
+            <p>
+            <label for="password">密碼:<input id="password"type="password" name ="password" minlength="3" maxlength="7" required> </label> 
+            </p>
+            <P>
+                <label for="年齡">年齡:<input id="年齡" type="number" name="age" min=0 max="125" value="99" required></label>
+            <!-- </P>
+            <label for="gender">性別:</label>
+            <select name="gender" id="gender" required><option value=""></option><option value="Cthulhu">克蘇魯</option><option value="male">男性</option><option value="female">女性</option></select> -->
+    
+            <p>
+                <label for="gender">性別:</label>
+                <input id =male type="radio"name="gender" value="male" required>
+                <label for="male">男性</label>
+                <input id =female type="radio"name="gender" value="female">
+                <label for="female">女性</label>
+                <input id =Cthulhu type="radio"name="gender" value="Cthulhu" checked>
+                <label for="Cthulhu">克蘇魯</label>
+                <P>
+                    <label for="體重">體重: <input id="體重" type="number" name="weight" min=0 max="125" value="20" step="0.1" placeholder="請輸入真實體重" required></label>
+        
+                    
+                </P>
+         
+                <p>
+                <input id="checkbox"type="checkbox" checked name="checkbox" value="agree">
+                <label for="checkbox">我同意資料外洩</label>
+                <span>
+                    <br>
+                    <label for="area">居住地區:</label>
+                <input list="arealist" type="text"name="area"id="area" required>
+                <datalist id="arealist">
+                    <option value="台北市">台北市</option>
+                    <option value="新北市">新北市</option>
+                    <option value="基隆市">基隆市</option>
+                    <option value="桃園市">桃園市</option>
+                    <option value="苗栗縣">苗栗縣</option>
+                    <option value="嘉義縣">嘉義縣</option>
+                    <option value="台中市">台中市</option>
+                    <option value="台南市">台南市</option>
+                    <option value="高雄市">高雄市</option>
+                    <option value="宜蘭縣">宜蘭縣</option>
+                    <option value="新竹縣">新竹縣</option>
+                    <option value="南投縣">南投縣</option>
+                    <option value="屏東縣">屏東縣</option>
+                    <option value="花蓮縣">花蓮縣</option>
+                    <option value="雲林縣">雲林縣</option>
+                    <option value="台東縣">台東縣</option>
+                    <option value="彰化縣">彰化縣</option>
+                    <option value="澎湖縣">澎湖縣</option>
+                </datalist>   
+                </span>
+                </datalist>    
+                </p>
+    </fieldset>
+        
+        <fieldset>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WuwUKnMZtgQ?si=UAjt0DboSIneY-BL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <legend>興趣</legend>
+
+            <p>
+                <label id="stock" for="hobby"><input id=hobby; type="checkbox"name=hobby value="stock">股票</label>
+                <label id="music" for="hobby1"><input id=hobby1; type="checkbox"name=hobby1 value="music">音樂</label>
+                <label id="video game" for="hobby2"><input id=hobby2; type="checkbox"name=hobby2 value="video game">電玩</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>填寫日期</legend>
+                <script>
+                date = new Date().toLocaleDateString();
+                document.write(date);
+                </script>
+                <input type="text" name="date" id="date" value="">
+            <input type="date" id="date1" name="date1" value="date1" min="date">
+            <!-- <input type="date" id="date" name="date" value="2023-08-29" min="<script>
+                date = new Date().toLocaleDateString();
+                document.write(date);
+                </script> -->
+                
+            
+        </fieldset>
+        <h1>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio ea numquam pariatur, delectus aut assumenda quod vitae repellat? Labore non blanditiis adipisci dignissimos minus veritatis ea corporis voluptates possimus delectus.
+            Reiciendis commodi quae deleniti reprehenderit rem iusto voluptatem aspernatur fuga saepe minima officia sequi quibusdam ipsum voluptatibus dicta repellat nemo unde assumenda recusandae sint in, amet aut animi. Doloremque, quis!
+            Dolorum blanditiis libero modi voluptatibus soluta atque aperiam animi, mollitia veritatis magnam ad reiciendis ullam, adipisci harum accusantium quam alias tempore beatae delectus magni! Praesentium sequi at cum id totam.
+            Non ipsa ducimus quibusdam quam facilis exercitationem quasi accusamus temporibus magni illum animi eaque aut, numquam tempore explicabo quidem. Ea, deserunt expedita facilis obcaecati modi facere voluptatem quis nam quos.
+            Culpa rerum optio, reiciendis inventore quidem fuga ipsam odit iure minus obcaecati iusto dicta voluptates! Dignissimos minus ratione blanditiis maiores, natus, eligendi sunt ea, voluptatibus consectetur nobis magni. Omnis, hic!
+            Modi quis, iusto rerum voluptate commodi officia cum recusandae impedit, reiciendis eos expedita, dolores adipisci! Inventore molestias fugiat consequuntur animi mollitia ut natus et, magni architecto tenetur quia sit est?
+            Facere cumque placeat aut mollitia itaque illo eveniet possimus natus, omnis ut dolores tempore eius ipsum nostrum dolor libero praesentium ab cupiditate tempora sapiente voluptatem debitis blanditiis! Deleniti, incidunt est.
+            Doloremque cupiditate esse natus fuga repellat quisquam dolore voluptatem? Quae autem porro laudantium blanditiis aliquid cumque officiis vitae! Velit quisquam voluptatibus soluta expedita eveniet rem aspernatur blanditiis quis in perferendis.
+            Obcaecati modi, quas nulla autem laborum consequuntur doloribus facere error adipisci consequatur beatae dolore ut sed reprehenderit laudantium officia totam et quisquam veritatis ipsam provident ipsa? Debitis exercitationem quam vel?
+            Facere eos praesentium hic ipsum aut modi corporis ab ducimus cumque tenetur nostrum id exercitationem illo impedit, a, perspiciatis nesciunt doloremque laborum neque. Eligendi deserunt minus adipisci maxime dicta veritatis!
+            Sapiente ullam dolore incidunt error vel, eligendi magni inventore voluptatem autem quisquam alias reprehenderit eius officiis delectus cum debitis aliquam ex dolorum recusandae animi pariatur velit asperiores. Magni, officia enim!
+            Dolores adipisci quibusdam illum omnis accusamus maxime recusandae provident, voluptatibus consequuntur sapiente hic voluptate mollitia, placeat maiores aliquam dolorum optio impedit autem sequi quis in molestiae. Doloremque aperiam fugiat dicta?
+            Voluptates beatae deleniti ducimus modi, id voluptas autem cupiditate voluptatibus sint, earum perspiciatis animi dignissimos illo in illum. Quo eius nihil eveniet dolorem similique mollitia quam totam voluptas facilis. Labore!
+            Consequatur ex dolorum doloremque suscipit unde vitae quaerat ipsum dignissimos iure velit animi inventore dolor dolores error nam ratione harum ipsa exercitationem accusamus quis at, veniam veritatis nobis. Aut, ab.
+            Voluptas autem blanditiis rem, quo fugit maxime omnis voluptatum nulla minus! Accusamus ducimus saepe hic repellendus dolore, accusantium at dolor, quo inventore quaerat exercitationem ad sequi placeat consequatur facere officiis.
+            Iure molestiae ipsa voluptatem expedita praesentium vitae eos odio quisquam ad iste nemo voluptatum inventore, fugit minima corrupti hic beatae nostrum mollitia dignissimos cumque deserunt omnis officiis odit sint? Omnis?
+            Nam animi error quas autem ea! Laborum, dolorem temporibus, explicabo sint ut doloremque unde eveniet perferendis saepe, placeat tempore. Incidunt earum aliquid vero nesciunt ipsam reprehenderit repudiandae quo nobis quidem?
+            Nam nihil perferendis libero molestiae ipsum dolorem totam eaque consectetur pariatur dignissimos, doloribus commodi unde expedita consequuntur dolores quibusdam, iure tempora obcaecati quas possimus quos, asperiores provident dolore. Doloribus, ipsam.
+            Illo possimus, ipsa fugit, dolorem repellendus expedita ipsum soluta perspiciatis dolore accusantium ipsam veniam perferendis optio impedit recusandae dolor fuga asperiores? Accusamus cumque consequuntur quas veniam hic ipsa, aliquam magnam!
+            Pariatur alias non corporis vel aliquid veniam. Vitae molestiae minus perferendis magni suscipit inventore rerum minima, quod exercitationem. Similique fugiat nemo sapiente excepturi quis natus a consectetur culpa dolorem tenetur.
+            Magni asperiores odio labore quam ea neque iusto corporis iste similique, ratione autem laborum quod est. Illum, a dicta? Modi reiciendis omnis eum sint nisi asperiores rem quos, fugit vitae!
+            Nemo quo perferendis impedit in vel? Repellendus expedita, obcaecati aliquid laboriosam pariatur illum asperiores debitis cum quis ipsam! Sunt quaerat numquam eligendi iure impedit. Repudiandae sunt in laborum nobis nesciunt!
+            Sapiente minus illum, accusamus sunt veniam quas, labore officiis beatae eum culpa quod ipsam eaque maiores consectetur at a dolore possimus sequi tempora ipsa, temporibus dolor. Dicta, cupiditate recusandae. Molestiae.
+            Pariatur magni ad ullam incidunt laborum laudantium aliquid, modi harum. Laudantium, et voluptate. Recusandae explicabo eum repellendus, possimus quidem ab voluptatibus qui earum labore illo! Error facere at expedita ducimus!
+            Officia, quibusdam! Illo accusantium natus reiciendis error iste vel rem laborum deleniti ullam, sit dicta cumque mollitia provident dignissimos, aut sint maiores voluptate, ipsum quae reprehenderit quam adipisci nesciunt sunt.
+            Officia totam at laborum dicta, possimus fugiat beatae! Nihil dolorum atque perferendis nostrum aliquam earum nulla eius nisi fugit quo amet esse vero maxime praesentium necessitatibus tempora dolore, reiciendis neque!
+            Laudantium fugit natus soluta esse minus tempora doloremque dolore nihil accusamus possimus ab porro, minima cum veritatis odit. Similique ex ullam numquam et reprehenderit aspernatur alias fugiat eum ratione dolorem.
+            Ad in veritatis quis blanditiis accusantium nesciunt velit consequuntur commodi pariatur dolorem, aperiam tenetur impedit sint quasi maiores harum itaque suscipit ducimus! Quam exercitationem animi quasi inventore, dolorem quia sed?
+            Non officiis quibusdam harum magni error nostrum, itaque dolorem alias assumenda. Nemo sit cumque dolorem autem. Dicta possimus pariatur ducimus. Ea modi cumque soluta itaque tempora, est in a et?
+            Necessitatibus error delectus quia libero maxime autem aperiam natus perspiciatis, tempore soluta? Possimus esse fuga laborum ullam asperiores saepe, quam vel dolor dolore voluptas quibusdam quisquam modi totam? Quo, consequuntur.
+            Culpa sit suscipit, qui inventore voluptas asperiores unde? Repudiandae aliquid aperiam alias doloremque dolorem in incidunt ad quidem ullam delectus. Fugit nesciunt repellat dolorum atque, accusantium quod quae dolores necessitatibus!
+            Corrupti repellendus beatae facilis tempora rem vero ullam enim amet vitae quis, facere unde dolores optio molestias culpa itaque. Est autem quibusdam hic illo ratione saepe tempore, recusandae modi cumque.
+            Consequuntur quod asperiores aperiam expedita commodi minus blanditiis pariatur officia inventore facere, omnis quis accusantium quasi itaque optio eos hic veritatis nobis consectetur corporis laboriosam! Dicta tenetur maxime autem corrupti.
+            Cum placeat ratione accusantium esse perspiciatis. Atque consequuntur veritatis eum possimus, magni ipsam eveniet odit ducimus accusantium? Sed explicabo dolorem iste excepturi cum. Aliquam voluptates, veniam mollitia reprehenderit possimus amet.
+            Sapiente dignissimos ullam fugit quos ad reprehenderit in explicabo saepe odit aperiam non animi a recusandae numquam natus ipsa voluptates eaque impedit quae eveniet vitae blanditiis esse, incidunt ipsam? Quis.
+            Autem harum laborum delectus exercitationem aliquid pariatur ad, ex, omnis praesentium libero dolor architecto itaque reprehenderit, rerum porro sequi facere? Impedit sunt adipisci culpa laborum eveniet officia, vero accusantium eos!
+            Similique, veniam voluptas et modi nobis nostrum animi perferendis assumenda optio perspiciatis corporis, ducimus non est quo beatae! Deleniti numquam sint consequatur exercitationem cupiditate ea molestiae dolorem dolores, dolore aperiam?
+            Enim saepe amet corrupti, neque magnam voluptate dolorem quis atque cupiditate fugiat quasi maxime iste rerum possimus praesentium consequuntur nesciunt? Voluptatum alias asperiores autem laborum cum omnis similique illo est.
+            Praesentium saepe nesciunt odio labore consectetur, aspernatur amet sapiente quidem velit deserunt eius quibusdam exercitationem laborum placeat doloribus est dignissimos quas nobis cum optio cupiditate sunt! Possimus nam corporis recusandae!
+            Illo aperiam eligendi optio eum deleniti deserunt voluptatum et laudantium explicabo nihil, sapiente ipsam amet consequatur perspiciatis sint asperiores esse eos mollitia maiores. Veritatis cupiditate beatae quaerat, in obcaecati quae.
+            Dolorum saepe deserunt asperiores. Quibusdam commodi amet reprehenderit dolore voluptatibus consequuntur rerum, illum illo! Dignissimos deleniti quibusdam repellendus voluptatum corrupti fugiat repellat ratione necessitatibus asperiores, itaque inventore? Ex, commodi eaque.
+            Nemo eum animi minima sed voluptas nobis, consequuntur, id mollitia molestias quia corporis excepturi error accusamus unde itaque deleniti inventore voluptates fugiat! Laudantium tenetur consectetur deserunt fuga, natus aliquid pariatur.
+            Corporis cupiditate similique veritatis dolor qui tempore maiores eius non est aperiam aliquid dolore quidem ut repudiandae repellendus hic sit, aliquam voluptas. Quidem ex libero ea, incidunt earum tenetur nihil!
+            Tempore, nam ut blanditiis quasi nostrum rerum ab. Illum quos doloribus saepe obcaecati porro sequi. Nisi necessitatibus minus, eligendi, quam magnam itaque quo debitis nesciunt, reprehenderit ea corrupti soluta? Omnis?
+            Facere autem dicta animi ab maxime ducimus laborum eaque cum libero nihil impedit explicabo incidunt beatae exercitationem aperiam ad, rem aliquam provident excepturi! Odit, tempore. Pariatur architecto eos nihil id?
+            Suscipit adipisci ratione deserunt eaque commodi voluptatibus architecto possimus sint! Temporibus excepturi a distinctio explicabo dolore, deserunt nobis hic saepe aut consequuntur nemo obcaecati, molestiae sed nihil. Ipsam, nihil officiis!
+            Laudantium vel molestiae neque cupiditate quia officia consequatur perspiciatis nam reprehenderit similique est, exercitationem voluptas amet fugiat enim pariatur quod dolorum! Tenetur, odio tempore veniam vitae maiores earum labore libero?
+            Nostrum, beatae sequi. Ut deleniti nesciunt exercitationem, illo quia aliquid fuga tempora error delectus, tempore aperiam labore autem cumque natus eum a quibusdam asperiores repellendus neque nisi libero at pariatur!
+            Quaerat delectus molestias soluta recusandae dolor saepe eveniet fugiat odit nesciunt a beatae explicabo, eaque consequatur consequuntur aperiam modi aliquam voluptate enim. Voluptate ut facilis optio quibusdam hic quam ullam!
+            Earum officia odio libero error reiciendis delectus adipisci aspernatur! Iure voluptatum aut totam voluptate inventore fugiat est porro ut, ipsam eligendi, magni, officiis dolor voluptatibus enim sed quos doloremque harum?
+        </h1>
+        <label for="suggestion">意見反應:</label>
+        <textarea name="suggestion" id="suggestion" cols="17" rows="5" placeholder="請填寫給網站的高見!"></textarea>
+        <input type="file" multiple>
+        </p>
+        <button type="submit">確認</button> 
+        <button type="reset">重設</button>   
+</body>
+</html>
