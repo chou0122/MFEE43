@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="myscore" value="100" maxlength="100">
+
+    <button onclick="mytest()">測試</button>
+    <script>
+        const myscore = document.querySelector('#myscore');
+        const myage = document.querySelector('#myage');
+        function mytest(){
+            const s=+myscore.value;
+            console.log(s);
+            if(s>=90 && s<=100) {
+                alert('應該的')}else{
+                    alert('failer')
+                }
+            
+        }
+        var a=10;
+        for(let i=0;i<193;i++){
+                console.log(a);
+                a+=1;
+
+        }
+    </script>
+    
+</body>
+</html>
