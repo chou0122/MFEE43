@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="info">123</div>
+    <div id="info">456</div>
+    <script>
+        const a2 = document.querySelector('.info');
+        const b2 = a2;
+        b2.innerHTML = `<h1>hello</h1>`;
+
+        let a = 10;
+        let b = a;
+        b = 5;
+        
+        //取得a2的類型名稱 (字串)
+        document.querySelectorAll(`.info`)[1].innerHTML = a2.constructor.name;
+    </script>
+</body>
+</html>

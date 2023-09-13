@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //另一種做法
+        for(i=0;i<16;i++){
+            let left=i*50,txt=i+1;
+            rect.innerHTML +=`<div class="ball"
+                                style="left:$(left)px; top:100px;">$(txt)</div>`;
+        }
+        //巢狀迴圈
+        let b,i,k,n=1;
+        for(k=0;k<6;k++){
+            for(i=0;i<10;i++,n++){
+                b=document.createElement('div');
+                b.className='ball';
+                b.innerHTML=n;
+                b.style.left=i*50+'px';
+                b.style.top=k*60+'px';
+                rect.appendChild(b);
+            }
+        }
+    </script>
+</body>
+</html>
